@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login">Se connecter</string>
+    <string name="email">Adresse mail:</string>
+    <string name="enter_your_password">Entrez votre mot de passe</string>
+    <string name="password">Mot de passe:</string>
+    <string name="enter_your_email_address">Entrez votre adresse mail</string>
+    <string name="info">Information</string>
+    <string name="errorMessage">Internet n\'est pas disponible. Verifiez votre connexion internet et réessayez plus tard.</string>
+    <string name="noInternet">Aucune connexion internet</string>
+    <string name="required">Requis</string>
+    <string name="incorrect">Inccorect</string>
+    <string name="noFidelity">Aucune carte de fidélité trouvée</string>
+    <string name="idFidelity">"ID de la carte de fidélité: "</string>
+    <string name="fidelityPoints">"Nombre de points de la carte de fidélité: "</string>
+    <string name="id">ID</string>
+    <string name="points">Points</string>
+    <string name="fidelityDetails">Avantages</string>
+    <string name="subscribe">Souscrire à une carte de fidélité</string>
+    <string name="congrat">Félicitations ! Vous venez de souscrire à notre programme de fidélité</string>
+</resources>

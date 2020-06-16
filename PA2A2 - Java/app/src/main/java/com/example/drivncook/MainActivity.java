@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
 
                 alertDialog.show();
             } catch (Exception e) {
-                Log.d("connectionBDD", "Show Dialog: " + e.getMessage());
+                e.printStackTrace();
             }
         }
     }

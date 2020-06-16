@@ -46,7 +46,6 @@ public class HomeActivity extends AppCompatActivity {
         AsyncTask<String, Void, String> getFidelity = new ApiFidelity(user);
         try {
             JSONObject myJson = new JSONObject(getFidelity.execute().get());
-            Log.d("jsonToMe", "onCreate: " + myJson);
             JSONObject card = myJson.getJSONObject("card");
             Fidelity fidelity = new Fidelity(card.getInt("idFidelity"), card.getInt("points"));
             user.setFidelity(fidelity);

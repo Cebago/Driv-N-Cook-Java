@@ -79,9 +79,7 @@ public class HomeActivity extends AppCompatActivity {
                         message.setText(getString(R.string.congrat));
                         AsyncTask<String, Void, String> ApiFidelity = new ApiFidelity(user);
                         JSONObject json = new JSONObject(ApiFidelity.execute().get());
-                        Log.d("emilien", "onClick: " + json);
                         JSONObject card = json.getJSONObject("card");
-                        Log.d("emilien", "onClick: " + card);
                         Fidelity fidelity = new Fidelity(card.getInt("idFidelity"), card.getInt("points"));
                         idFidelity.setVisibility(View.VISIBLE);
                         idFidelity.setText( "" + fidelity.getIdFidelity());

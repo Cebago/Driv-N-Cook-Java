@@ -11,23 +11,23 @@ import java.util.List;
 
 public class FidelityAdapter extends BaseAdapter {
 
-    private List<Fidelity> fidelityList;
+    private List<Advantage> advantageList;
     private Context context;
 
-    public FidelityAdapter(Context context, List<Fidelity> fidelityList){
+    public FidelityAdapter(Context context, List<Advantage> advantageList){
         this.context = context;
-        this.fidelityList = fidelityList;
+        this.advantageList = advantageList;
     }
 
 
     @Override
     public int getCount() {
-        return fidelityList.size();
+        return advantageList.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return this.fidelityList.get(position);
+        return this.advantageList.get(position);
     }
 
     @Override
@@ -41,15 +41,15 @@ public class FidelityAdapter extends BaseAdapter {
            LayoutInflater inflater = LayoutInflater.from(this.context);
            convertView = inflater.inflate(R.layout.row,null);
        }
-       TextView title = convertView.findViewById(R.id.title);
+       TextView title = convertView.findViewById(R.id.nameAdvantage);
        TextView points = convertView.findViewById(R.id.points);
        TextView category = convertView.findViewById(R.id.category);
 
        Advantage advantage = (Advantage) getItem(position);
 
-       title.setText(advantage.getAdvantageName());
-       category.setText(advantage.getCategoryName());
-       points.setText(advantage.getNbPoint());
+       title.setText("" + advantage.getAdvantageName());
+       category.setText("" + advantage.getCategoryName());
+       points.setText("" + advantage.getNbPoint());
 
        return convertView;
     }

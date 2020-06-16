@@ -102,7 +102,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(HomeActivity.this, FidelityActivity.class);
-                it.putExtra("name", user);
+                it.putExtra("user", user);
                 startActivity(it);
             }
         });

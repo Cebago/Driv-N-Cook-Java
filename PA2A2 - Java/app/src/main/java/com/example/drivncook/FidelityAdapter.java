@@ -14,7 +14,7 @@ public class FidelityAdapter extends BaseAdapter {
     private List<Advantage> advantageList;
     private Context context;
 
-    public FidelityAdapter(Context context, List<Advantage> advantageList){
+    public FidelityAdapter(Context context, List<Advantage> advantageList) {
         this.context = context;
         this.advantageList = advantageList;
     }
@@ -37,20 +37,20 @@ public class FidelityAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-       if (convertView == null){
-           LayoutInflater inflater = LayoutInflater.from(this.context);
-           convertView = inflater.inflate(R.layout.row,null);
-       }
-       TextView title = convertView.findViewById(R.id.nameAdvantage);
-       TextView points = convertView.findViewById(R.id.points);
-       TextView category = convertView.findViewById(R.id.category);
+        if (convertView == null) {
+            LayoutInflater inflater = LayoutInflater.from(this.context);
+            convertView = inflater.inflate(R.layout.row, null);
+        }
+        TextView title = convertView.findViewById(R.id.nameAdvantage);
+        TextView points = convertView.findViewById(R.id.points);
+        TextView category = convertView.findViewById(R.id.category);
 
-       Advantage advantage = (Advantage) getItem(position);
+        Advantage advantage = (Advantage) getItem(position);
 
-       title.setText("" + advantage.getAdvantageName());
-       category.setText("" + advantage.getCategoryName());
-       points.setText("" + advantage.getNbPoint());
+        title.setText("" + advantage.getAdvantageName());
+        category.setText("" + advantage.getCategoryName());
+        points.setText("" + advantage.getNbPoint());
 
-       return convertView;
+        return convertView;
     }
 }

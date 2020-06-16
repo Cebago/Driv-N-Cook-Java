@@ -3,7 +3,6 @@ package com.example.drivncook;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -49,7 +48,7 @@ public class HomeActivity extends AppCompatActivity {
             JSONObject card = myJson.getJSONObject("card");
             Fidelity fidelity = new Fidelity(card.getInt("idFidelity"), card.getInt("points"));
             user.setFidelity(fidelity);
-            idFidelity.setText( "" + fidelity.getIdFidelity());
+            idFidelity.setText("" + fidelity.getIdFidelity());
             points.setText("" + fidelity.getPoints());
             details.setVisibility(View.VISIBLE);
         } catch (ExecutionException | InterruptedException | JSONException e) {
@@ -80,7 +79,7 @@ public class HomeActivity extends AppCompatActivity {
                         JSONObject card = json.getJSONObject("card");
                         Fidelity fidelity = new Fidelity(card.getInt("idFidelity"), card.getInt("points"));
                         idFidelity.setVisibility(View.VISIBLE);
-                        idFidelity.setText( "" + fidelity.getIdFidelity());
+                        idFidelity.setText("" + fidelity.getIdFidelity());
                         points.setVisibility(View.VISIBLE);
                         points.setText("" + fidelity.getPoints());
                         details.setVisibility(View.VISIBLE);

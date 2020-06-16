@@ -2,7 +2,6 @@ package com.example.drivncook;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -42,7 +41,6 @@ public class FidelityActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
 
     }
-
 
 
 }

@@ -35,11 +35,9 @@ public class FidelityActivity extends AppCompatActivity {
             }
         } catch (JSONException | ExecutionException | InterruptedException e) {
             e.printStackTrace();
-            Log.d("allaoua", "onCreate: " + e);
         }
 
         listView = findViewById(R.id.allFidelity);
-        Log.d("allaoua", "onCreate: " + advantages);
         FidelityAdapter adapter = new FidelityAdapter(FidelityActivity.this, advantages);
         listView.setAdapter(adapter);
 

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/fidelityID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/idFidelity" />
+
+        <TextView
+            android:id="@+id/idFidelity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/id" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/numberPoints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/fidelityPoints" />
+
+        <TextView
+            android:id="@+id/fidelityPoints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/points" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/subscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subscribe" />
+
+        <Button
+            android:id="@+id/fidelityDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fidelityDetails" />
+
+    </LinearLayout>
+
+</LinearLayout>
